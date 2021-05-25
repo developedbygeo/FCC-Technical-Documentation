@@ -64,6 +64,10 @@ h6 {
 
 /* Nav */
 
+#burger {
+  display: none;
+}
+
 .main-header {
   background: var(--spacecadet);
   color: white;
@@ -85,6 +89,7 @@ nav {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   flex: 1 1 10rem;
   flex-direction: column;
   align-items: flex-start;
@@ -178,7 +183,8 @@ nav h1 {
 }
 
 #HTML_Editors,
-#HTML_Basic_Examples {
+#HTML_Basic_Examples,
+#HTML_Elements {
   margin-top: 5rem;
 }
 .span-1 {
@@ -193,4 +199,88 @@ nav h1 {
 .span-3 {
   color: white;
   font-weight: bold;
+}
+
+/* Class for app.js */
+
+.active {
+  min-width: 100vw;
+  min-height: 100vh;
+  flex-direction: column;
+  width: auto;
+}
+.active-header {
+  background: var(--spacecadet);
+  color: white;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 3;
+  min-height: 100vh;
+}
+.active-a {
+  color: var(--isabelline);
+  font-size: 1.8rem;
+  display: block;
+}
+.active-h1 {
+  display: block;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .main-header {
+    transform: translateX(-100%);
+    transition: all 1s linear;
+  }
+  .nav {
+    transform: translateX(-100%);
+    transition: all 1s linear;
+  }
+  .nav-link {
+    transition: transform 0.5s ease-in;
+  }
+  #main-doc {
+    margin: 1%;
+  }
+  .wrapper {
+    margin: 0;
+  }
+  .burger div {
+    width: 2.5rem;
+    height: 0.5rem;
+    margin: 0.5rem;
+    background: var(--spacecadet);
+    border-radius: 0.3rem;
+  }
+  .burger {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    cursor: pointer;
+  }
+  .main-header-active {
+    transform: translateX(0%);
+    min-width: 100vw;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-1.9rem, 0.45rem);
+    background: white;
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-1rem, 0.5rem);
+    background: white;
+  }
 }

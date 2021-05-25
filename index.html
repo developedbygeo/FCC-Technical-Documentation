@@ -24,36 +24,40 @@
       sizes="16x16"
       href="./icons/favicon-16x16.png"
     />
-    <title>HTML Documentation</title>
+    <title>HTML Documentation - A short introduction</title>
   </head>
   <body>
     <header class="main-header">
-      <nav>
+      <nav class='nav' id="navbar">
+        <header>
         <a href="./index.html"
-          ><h1><span class="logo-blue">HTML:</span> Introduction</h1></a
-        >
+          ><h1><span class="logo-blue">HTML:</span> Introduction</h1></a>
+      </header>
         <hr />
         <ul>
-          <li><a href="#HTML_Introduction">HTML Introduction</a></li>
-          <li><a href="#HTML_Editors">HTML Editors</a></li>
-          <li><a href="#HTML_Basic_Examples">HTML Basic Examples</a></li>
-          <li><a href="#HTML_Elements">HTML Elements</a></li>
-          <li><a href="#">HTML Attributes</a></li>
-          <li><a href="#">HTML Paragraphs</a></li>
-          <li><a href="#">HTML Styles</a></li>
-          <li><a href="#">HTML Text Formatting</a></li>
+          <li class='list-link'><a class="nav-link" href="#HTML_Introduction">HTML Introduction</a></li>
+          <li class='list-link'><a class="nav-link" href="#HTML_Editors">HTML Editors</a></li>
+          <li class='list-link'><a class="nav-link" href="#HTML_Basic_Examples">HTML Basic Examples</a></li>
+          <li class='list-link'><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
+          <li class='list-link'><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
         </ul>
       </nav>
     </header>
     <main id="main-doc">
       <section class="main-section" id="HTML_Introduction">
+
         <header>
           <h2>HTML Introduction</h2>
         </header>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
         <div class="wrapper">
           <p class="intro">
             What is HTML? HTML is the <u> standard markup language</u> for
-            creating Web pages.It allows the user to create and structure
+            creating Web pages. It allows the user to create and structure
             sections, paragraphs, headings, links, and blockquotes for web pages
             and applications.
           </p>
@@ -73,20 +77,22 @@
           </ul>
           <h3>A simple HTML Document</h3>
           <div class="code-wrap">
-            <br />
-            <p>*** Example Code ***</p>
-            <br />
-            <p>
-              &lt;!DOCTYPE html &gt; <br />
-              &lt;html&gt;<br />
-              &lt;head&gt; <br />
-              &lt;title&gt; Page Title Goes Here &lt;/title&gt;<br />
-              &lt;/head&gt;<br />
-              &lt;body&gt;<br />
-              &lt;h1&gt; My First Heading &lt;/h1&gt;<br />
-              &lt;p&gt; My first paragraph. &lt;/p&gt;<br />
-              &lt;/body&gt;<br />&lt;/html&gt;
-            </p>
+            <code>
+              <br />
+              <p>*** Example Code ***</p>
+              <br />
+              <p>
+                &lt;!DOCTYPE html &gt; <br />
+                &lt;html&gt;<br />
+                &lt;head&gt; <br />
+                &lt;title&gt; Page Title Goes Here &lt;/title&gt;<br />
+                &lt;/head&gt;<br />
+                &lt;body&gt;<br />
+                &lt;h1&gt; My First Heading &lt;/h1&gt;<br />
+                &lt;p&gt; My first paragraph. &lt;/p&gt;<br />
+                &lt;/body&gt;<br />&lt;/html&gt;
+              </p>
+            </code>
           </div>
           <h4 class="sub">Example Explained</h4>
           <ul>
@@ -115,8 +121,10 @@
           <h4 class="sub">HTML Tags</h4>
           <p>HTML tags are element names surrounded by angle brackets:</p>
           <div class="code-wrap code2">
+            <code>
             <p>&lt;tagname&gt; content goes here.. &lt;/tagname&gt;</p>
           </div>
+        </code>
           <ul>
             <li>
               &lt;<i>html</i>&gt; tags normally come in pairs like
@@ -232,6 +240,7 @@
             </li>
           </ul>
           <div class="code-wrap code2">
+            <code>
             <br />
             <p>*** Example Code ***</p>
             <br />
@@ -253,6 +262,7 @@
               &lt;/p&gt;<br />
               &lt;/body&gt;<br />&lt;/html&gt;
             </p>
+          </code>
           </div>
           <h4>HTML Headings</h4>
           <ul>
@@ -268,6 +278,7 @@
             </li>
           </ul>
           <div class="code-wrap code2">
+            <code>
             <br />
             <p>*** Example Code ***</p>
             <br />
@@ -283,6 +294,7 @@
             &lt;h4&gt;
             <p style="font-size: 1.8rem">This is heading 4</p>
             &lt;/h4&gt;
+          </code>
           </div>
           <h4>HTML Paragraphs</h4>
           <ul>
@@ -292,6 +304,7 @@
             </li>
           </ul>
           <div class="code-wrap code2">
+            <code>
             <br />
             <p>***Example Code***</p>
             <br />
@@ -300,6 +313,7 @@
             &gt;
             <p><span class="span-2">This is a link</span></p>
             &lt;/a&gt;
+          </code>
           </div>
           <ul>
             <li>
@@ -325,6 +339,7 @@
             </li>
           </ul>
           <div class="code-wrap code2">
+            <code>
             <br />
             <p>***Example Code***</p>
             <br />
@@ -336,7 +351,9 @@
               width = "104"
               <br />
               height = "150" &gt;
+
             </p>
+          </code>
           </div>
           <h4>HTML Buttons</h4>
           <ul>
@@ -346,12 +363,14 @@
             </li>
           </ul>
           <div class="code-wrap code2">
+            <code>
             <br />
             <p>***Example Code***</p>
             <br />
             <p>
               &lt;button&gt;<span class="span-2">Click me</span> &lt;/button&gt;
             </p>
+          </code>
           </div>
           <h4>HTML Lists</h4>
           <ul>
@@ -364,6 +383,7 @@
             </li>
           </ul>
           <div class="code-wrap code2">
+            <code>
             <br />
             <p>***Example Code***</p>
             <br />
@@ -378,6 +398,7 @@
               <br />
               &lt;/ul&gt;
             </p>
+          </code>
           </div>
         </div>
         <hr />
@@ -385,6 +406,95 @@
       <section class="main-section" id="HTML_Elements">
         <header>
           <h2>HTML Elements</h2>
+        </header>
+        <div class="wrapper">
+          <p class="intro">
+            An HTML file consists of elements. They are responsible for creating
+            web pages and defining content in that wepage. It usually consists
+            of a <b>start tag</b> &lt;tag name&gt;, <b>close tag</b> &lt;/tag
+            name&gt; and content is inserted in-between.
+            <b
+              >Technically, an element is a collection of a start tag,
+              attributes, an end tag and content between them</b
+            >.
+          </p>
+          <h4>Nested HTML Elements</h4>
+          <ul>
+            <li>
+              HTML elements can be nested (elements can contain elements).
+            </li>
+            <li>All HTML documents consist of nested HTML elements.</li>
+            <li>This example contains four HTML elements:</li>
+          </ul>
+          <div class="code-wrap code2">
+            <code>
+            <br />
+            <p>***Example Code</p>
+            <br />
+            <p>
+              &lt;!DOCTYPE httml&gt;
+              <br />
+              &lt;html&gt;
+              <br />
+              &lt;body&gt;
+              <br />
+              &lt;h1&gt; My first Heading &lt;/h1&gt;<br />
+              &lt;p&gt; My first paragraph. &lt;/p&gt;
+              <br />
+              &lt;/body&gt; <br />
+              &lt;/html&gt;
+            </p>
+          </code>
+          </div>
+          <ul>
+            <li>
+              The <span class="span-1">&lt;body&gt;</span> defines the
+              <b>document body</b>.
+            </li>
+            <li>
+              It has a <b>start</b> tag and an <b>end</b> tag &lt;/body&gt;.
+            </li>
+            <li>
+              The element <b>content</b> is two other HTML elemenents
+              (&lt;h1&gt; and &lt;p&gt;)
+            </li>
+          </ul>
+          <div class="code-wrap code2">
+            <code>
+            <br />
+            <p>
+              &lt;body&gt;
+              <br />
+              &lt;h1&gt; My first heading &lt;/h1&gt;<br />
+              &lt;p&gt; My first paragraph &lt;/p&gt;<br />
+              &lt;/body&gt;
+            </p>
+          </code>
+          </div>
+          <ul>
+            <li>
+              The
+              <span class="span-1">&lt;p&gt;</span> element defines a
+              <b>paragraph</b>.
+            </li>
+            <li>
+              It has a <b>start</b> tag &lt;p&gt; and an <b>end</b> tag
+              &lt;/p&gt;
+            </li>
+            <li>The element <b>content</b> is: My first paragraph.</li>
+          </ul>
+          <div class="code-wrap code2">
+            <code>
+            <br />
+            <p>&lt;p&gt; My first paragraph. &lt;/p&gt;</p>
+          </code>
+          </div>
+        </div>
+        <hr />
+      </section>
+      <section class="main-section" id="HTML_Attributes">
+        <header>
+          <h2>HTML Attributes</h2>
         </header>
         <div class="wrapper">
           <p class="intro">
@@ -413,10 +523,12 @@
             </li>
           </ul>
           <div class="code-wrap code2">
+            <code>
             <br />
             <p>***Example Code***</p>
             <br />
             <p>&lt;img src = "img_shoe.jpg"&gt;</p>
+          </code>
           </div>
           <h4>The width and height Attributes</h4>
           <ul>
@@ -426,6 +538,7 @@
             </li>
           </ul>
           <div class="code-wrap code2">
+            <code>
             <br />
             <p>***Example Code***</p>
             <br />
@@ -436,9 +549,89 @@
               <br />
               height = "600"&gt;
             </p>
+          </code>
+          </div>
+          <h4>The alt Attributes</h4>
+          <ul>
+            <li>
+              The <span class="span-1">alt</span> attribute specifies an
+              alternative text to be used when an image cannot be displayed.
+            </li>
+            <li>
+              The value of the attribute can be read by screen readers. This
+              way, someone "listening" to the webpage. <br />
+              e.g. a vision impaired person, can "hear" the element.
+            </li>
+          </ul>
+          <div class="code-wrap wrap2">
+            <code>
+            <br />
+            <p>***Example Code</p>
+            <br />
+            <p>
+              &lt;img src = "img_shoe.jpg"<br />
+              alt = "Shoe with no shoelaces"&gt;
+            </p>
+          </code>
+          </div>
+          <h4>The lang Attribute</h4>
+          <ul>
+            <li>
+              The language of the document can be declared in the
+              <span class="span-1">&lt;html&gt;</span> tag.
+            </li>
+            <li>
+              The language is declared with the
+              <span class="span-1">lang</span> attribute.
+            </li>
+            <li>
+              Declaring a language is important for accessibility applications
+              (screen readers) and search engines:
+            </li>
+          </ul>
+          <div class="code-wrap code2">
+            <code>
+            <br />
+            <p>
+              &lt;!DOCTYPE html&gt;
+              <br />
+              &lt;html lange = "en-US"&gt;
+              <br />
+              &lt;body&gt;
+              <br />
+              ...
+              <br />
+              &lt;/body&gt;
+              <br />
+              &lt;/html&gt;
+            </p>
+          </code>
+          </div>
+          <h4>The title Attribute</h4>
+          <ul>
+            <li>
+              Here, a <span class="span-1">title</span> attribute is added to
+              the <span class="span-1">&lt;p&gt;</span> element. The value of
+              the title attribute will be displayed as a tooltip when you mouse
+              over the paragraph.
+            </li>
+          </ul>
+          <div class="code-wrap code2">
+            <code>
+            <br />
+            <p>
+              *** Example Code***
+              <br />
+              &lt;p title = "I am a tooltip"&gt;
+              <br />
+              <span class="span-3">this is a paragraph</span>&lt;/p&gt;
+            </p>
+          </code> 
           </div>
         </div>
       </section>
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
