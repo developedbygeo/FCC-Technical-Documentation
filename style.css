@@ -22,7 +22,7 @@ button,
 label,
 input,
 p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 h2 {
@@ -34,7 +34,7 @@ h3 {
 }
 h4,
 h5 {
-  font-size: 2.8rem;
+  font-size: 2rem;
 }
 
 a {
@@ -59,6 +59,7 @@ h6 {
   --heliotrope_gray: #9a8c98;
   --silver_pink: #c9ada7;
   --isabelline: #f2e9e4;
+  --spanblue: #0077b6;
 }
 
 /* Nav */
@@ -127,24 +128,29 @@ nav h1 {
 }
 .main-section h2 {
   text-align: center;
+  color: var(--spacecadet);
+}
+.main-section ul {
+  margin: 2rem;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin: 2rem 8rem;
 }
 .intro {
   margin: 2rem 0;
 }
 .wrapper ul li {
-  line-height: 3rem;
+  line-height: 3.5rem;
 }
 /* .wrapper ul {
   margin: 4rem 0;
 } */
-.wrapper h3 {
+.wrapper h3,
+.wrapper h4 {
   margin: 2rem;
-  text-align: center;
+  color: var(--independence);
 }
 
 .code-wrap {
@@ -156,5 +162,35 @@ nav h1 {
 }
 .code-wrap p {
   margin: 0.5rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+}
+.sub {
+  margin: 2rem;
+}
+.code2 {
+  margin: 2rem;
+}
+.img-wrapper {
+  margin: 4rem;
+}
+.img-wrapper img {
+  width: 50%;
+}
+
+#HTML_Editors,
+#HTML_Basic_Examples {
+  margin-top: 5rem;
+}
+.span-1 {
+  color: var(--spanblue);
+  font-weight: bold;
+}
+.span-2 {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.span-3 {
+  color: white;
+  font-weight: bold;
 }

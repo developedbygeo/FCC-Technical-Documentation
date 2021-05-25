@@ -35,9 +35,9 @@
         <hr />
         <ul>
           <li><a href="#HTML_Introduction">HTML Introduction</a></li>
-          <li><a href="#">HTML Editors</a></li>
-          <li><a href="#">HTML Basic Examples</a></li>
-          <li><a href="#">HTML Elements</a></li>
+          <li><a href="#HTML_Editors">HTML Editors</a></li>
+          <li><a href="#HTML_Basic_Examples">HTML Basic Examples</a></li>
+          <li><a href="#HTML_Elements">HTML Elements</a></li>
           <li><a href="#">HTML Attributes</a></li>
           <li><a href="#">HTML Paragraphs</a></li>
           <li><a href="#">HTML Styles</a></li>
@@ -53,7 +53,9 @@
         <div class="wrapper">
           <p class="intro">
             What is HTML? HTML is the <u> standard markup language</u> for
-            creating Web pages.
+            creating Web pages.It allows the user to create and structure
+            sections, paragraphs, headings, links, and blockquotes for web pages
+            and applications.
           </p>
           <ul>
             <li>HTML stands for Hyper Text Markup Language.</li>
@@ -74,27 +76,368 @@
             <br />
             <p>*** Example Code ***</p>
             <br />
-            &lt;!DOCTYPE html &gt; <br />
-            &lt;html&gt;<br />
-            &lt;head&gt; <br />
-            &lt;title&gt;
-            <p>Page Title Goes Here</p>
-            &lt;/title&gt;<br />
-            &lt;/head&gt;<br />
-            &lt;body&gt;<br />
-            &lt;h1&gt;
-            <p>My First Heading</p>
-            &lt;/h1&gt;<br />
-            &lt;p&gt;
-            <p>My first paragraph.</p>
-
-            &lt;/p&gt;<br />
-            &lt;/body&gt;<br />&lt;/html&gt;
+            <p>
+              &lt;!DOCTYPE html &gt; <br />
+              &lt;html&gt;<br />
+              &lt;head&gt; <br />
+              &lt;title&gt; Page Title Goes Here &lt;/title&gt;<br />
+              &lt;/head&gt;<br />
+              &lt;body&gt;<br />
+              &lt;h1&gt; My First Heading &lt;/h1&gt;<br />
+              &lt;p&gt; My first paragraph. &lt;/p&gt;<br />
+              &lt;/body&gt;<br />&lt;/html&gt;
+            </p>
           </div>
+          <h4 class="sub">Example Explained</h4>
+          <ul>
+            <li>
+              The &lt;<i>!DOCTYPE html</i>&gt; declaration defines this document
+              to be HTML5.
+            </li>
+            <li>
+              The &lt;<i>html</i>&gt; element is the root element of an HTML
+              page.
+            </li>
+            <li>
+              The &lt;<i>head</i>&gt; element contains meta information about
+              the document.
+            </li>
+            <li>
+              The &lt;<i>title</i>&gt; element specifies a title for the
+              document.
+            </li>
+            <li>
+              The &lt;<i>body</i>&gt; element contains the visible page content.
+            </li>
+            <li>The &lt;<i>h1</i>&gt; element defines a large heading.</li>
+            <li>The &lt;<i>p</i>&gt; element defines a paragraph.</li>
+          </ul>
+          <h4 class="sub">HTML Tags</h4>
+          <p>HTML tags are element names surrounded by angle brackets:</p>
+          <div class="code-wrap code2">
+            <p>&lt;tagname&gt; content goes here.. &lt;/tagname&gt;</p>
+          </div>
+          <ul>
+            <li>
+              &lt;<i>html</i>&gt; tags normally come in pairs like
+              &lt;<b>p</b>&gt; and &lt;<b>/p</b>&gt;.
+            </li>
+            <li>
+              The first tage in a pair is the start tag, the second tag is the
+              end tag.
+            </li>
+            <li>
+              The end tag is written like the start tag, but with a forward
+              slash inserted before the tag name.
+            </li>
+          </ul>
         </div>
       </section>
+      <hr />
       <section class="main-section" id="HTML_Editors">
         <header><h2>HTML Editors</h2></header>
+        <div class="wrapper">
+          <p class="intro">
+            Web pages can be created and modified by using professional HTML
+            editors. <br />
+            However, for learning HTML we recommend a simple text editor like
+            Notepad (PC) or TextEdit (Mac). We believe using a simple text
+            editor is a good way to learn HTML.
+            <br />
+            Follow the four steps below to create your first web page with
+            Notepad or TextEdit.
+          </p>
+          <h4>Step 1 : Open Notepad (PC)</h4>
+          <ul>
+            <li>
+              Windows 8 or later: <br />
+              <p>
+                Open the <b>Start Screen</b> (the window symbol at the bottom
+                left of the screen). Type <b>Notepad</b>.
+              </p>
+            </li>
+            <li>
+              Windows 7 or earlier: <br />
+              <p>Open <b>Start > Programs > Accesories > Notepad</b>.</p>
+            </li>
+          </ul>
+          <h4>Step 1 : Open TextEdit (Mac)</h4>
+          <ul>
+            <li>Open <b>Finder > Applications > TextEdit</b>.</li>
+            <li>
+              Change some preferences to get the application to save files
+              correctly. In <b>Preferences > Format > choose "Plain Text</b>."
+            </li>
+            <li>
+              Then under "Open and Save", check the box that says "Display HTML
+              files as HTML code instead of formatted text".
+            </li>
+            <li>Then open a new document to place the code.</li>
+          </ul>
+          <h4>Step 2 : Write Some HTML</h4>
+          <p class="sub">Write or copy some HTML into Notepad.</p>
+          <h4>Step 3 : Save the HTML Page</h4>
+          <ul>
+            <li>
+              Save the file on your computer. Select <b>File > Save as</b> in
+              the Notepad menu.
+            </li>
+            <li>
+              Name the file <b>"index.htm"</b> and set the encoding to
+              <b>UTF-8</b> (which is the preferred encoding for HTML files).
+            </li>
+          </ul>
+          <h4>Step 4 : View the HTML Page in Your Browser</h4>
+          <ul>
+            <li>
+              Open the saved HTML file in your favorite browser (double click on
+              the file, or right-click - and choose <b>"Open with"</b>).
+            </li>
+          </ul>
+          <div class="img-wrapper">
+            <img
+              src="https://www.w3schools.com/html/img_chrome.png"
+              alt="img of simple HTML code saying 'My First Heading"
+            />
+          </div>
+        </div>
+        <hr />
+      </section>
+      <section class="main-section" id="HTML_Basic_Examples">
+        <header>
+          <h2>HTML Basic Examples</h2>
+        </header>
+        <div class="wrapper">
+          <p class="intro">
+            Let's have a look at some pretty simple examples regarding how HTML
+            works and how we can start writing code. Feel free to try them out
+            in a text editor to see how they look in your own browser and
+            customize them further.
+          </p>
+          <h4>Step 1 : Open Notepad (PC)</h4>
+          <ul>
+            <li>
+              All HTML documents must start with a document type declaration:
+              <span class="span-1">&lt;!DOCTYPE html&gt;</span>.
+            </li>
+            <li>
+              The HTML document itself begins with
+              <span class="span-1">&lt;html&gt;</span> and ends with
+              <span class="span-1">&lt;html&gt;</span>.
+            </li>
+            <li>
+              The visible part of the HTML document is between
+              <span class="span">&lt;body&gt;</span> and
+              <span class="span-1">&lt;/body&gt;</span>.
+            </li>
+          </ul>
+          <div class="code-wrap code2">
+            <br />
+            <p>*** Example Code ***</p>
+            <br />
+            <p>
+              &lt;!DOCTYPE html &gt; <br />
+              &lt;html&gt;<br />
+              &lt;head&gt; <br />
+              &lt;title&gt;
+              <b>Page Title Goes Here</b>
+              &lt;/title&gt;<br />
+              &lt;/head&gt;<br />
+              &lt;body&gt;<br />
+              &lt;h1&gt;
+              <b>My First Heading</b>
+              &lt;/h1&gt;<br />
+              &lt;p&gt;
+              <b>My first paragraph</b>
+
+              &lt;/p&gt;<br />
+              &lt;/body&gt;<br />&lt;/html&gt;
+            </p>
+          </div>
+          <h4>HTML Headings</h4>
+          <ul>
+            <li>
+              HTML headings are defined with the
+              <span class="span-1"> &lt;h1&gt;</span> to
+              <span class="span-1">&lt;h6&gt;</span> tags.
+            </li>
+            <li>
+              <span class="span-1">&lt;h1&gt;</span> defines the most important
+              heading. <span class="span-1">&lt;h6&gt;</span> defines the least
+              important heading:
+            </li>
+          </ul>
+          <div class="code-wrap code2">
+            <br />
+            <p>*** Example Code ***</p>
+            <br />
+
+            &lt;h1&gt;
+            <p style="font-size: 2.4rem">This is heading 1</p>
+            &lt;/h1&gt; <br />&lt;h2&gt;
+            <p style="font-size: 2.2rem">This is heading 2</p>
+            &lt;/h2&gt; <br />
+            &lt;h3&gt;
+            <p style="font-size: 2rem">This is heading 3</p>
+            &lt;/h3&gt; <br />
+            &lt;h4&gt;
+            <p style="font-size: 1.8rem">This is heading 4</p>
+            &lt;/h4&gt;
+          </div>
+          <h4>HTML Paragraphs</h4>
+          <ul>
+            <li>
+              HTML links are defined with the
+              <span class="span-1">&lt;a&gt;</span> tag:
+            </li>
+          </ul>
+          <div class="code-wrap code2">
+            <br />
+            <p>***Example Code***</p>
+            <br />
+            &lt;a
+            <p>href="http://www.w3schools.com</p>
+            &gt;
+            <p><span class="span-2">This is a link</span></p>
+            &lt;/a&gt;
+          </div>
+          <ul>
+            <li>
+              The link's destination is specified in the
+              <span class="span-1">href</span> attribute.
+            </li>
+            <li>
+              Attributes are used to provide additional information about HTML
+              elements.
+            </li>
+            <li>You will learn more about attributes in a later chapter.</li>
+          </ul>
+          <h4>HTML Images</h4>
+          <ul>
+            <li>
+              HTML images are defined with the
+              <span class="span-1">&lt;img&gt;</span> tag:
+            </li>
+            <li>
+              The source file (<span class="span-1">src</span>), alternative
+              text (<span class="span-1">alt</span>), width , and
+              <span class="span-1">height</span> are provided as attributes:
+            </li>
+          </ul>
+          <div class="code-wrap code2">
+            <br />
+            <p>***Example Code***</p>
+            <br />
+            <p>
+              &lt; img src = "w3schools.jpg"
+              <br />
+              alt = "This is an image of x,y"
+              <br />
+              width = "104"
+              <br />
+              height = "150" &gt;
+            </p>
+          </div>
+          <h4>HTML Buttons</h4>
+          <ul>
+            <li>
+              HTML buttons are defined with the
+              <span class="span-1">&lt;button&gt;</span> tag:
+            </li>
+          </ul>
+          <div class="code-wrap code2">
+            <br />
+            <p>***Example Code***</p>
+            <br />
+            <p>
+              &lt;button&gt;<span class="span-2">Click me</span> &lt;/button&gt;
+            </p>
+          </div>
+          <h4>HTML Lists</h4>
+          <ul>
+            <li>
+              HTML lists are defined with the
+              <span class="span-1">&lt;ul&gt;</span> (unordered / bullet list)
+              or the <span class="span-1">&lt;ol&gt;</span> (ordered / numbered
+              list) tag, followed by <span class="span-1">&lt;li&gt;</span> tags
+              (list items):
+            </li>
+          </ul>
+          <div class="code-wrap code2">
+            <br />
+            <p>***Example Code***</p>
+            <br />
+            <p>
+              &lt;ul&gt;
+              <br />
+              <br />
+              &lt;li&gt; <span class="span-3">Coffee</span> &lt;/li&gt; <br />
+              &lt;li&gt; <span class="span-3">Tea</span> &lt;/li&gt; <br />
+              &lt;li&gt;
+              <span class="span-3">Milk</span> &lt;/li&gt; <br />
+              <br />
+              &lt;/ul&gt;
+            </p>
+          </div>
+        </div>
+        <hr />
+      </section>
+      <section class="main-section" id="HTML_Elements">
+        <header>
+          <h2>HTML Elements</h2>
+        </header>
+        <div class="wrapper">
+          <p class="intro">
+            Attributes provide additional information about the HTML elements,
+            by either being additional values that configure the elements or by
+            adjusting their behavior in various ways to meet the criteria that
+            users want.
+          </p>
+          <ul>
+            <li>All HTML elements can have <b>attributes</b>.</li>
+            <li>
+              Attributes provide <b>additional information</b> about an element.
+            </li>
+            <li>Attributes are always specified in <b>the start tag</b>.</li>
+            <li>
+              Attributes usually come in name/value pairs like:
+              <b>name="value"</b>.
+            </li>
+          </ul>
+          <h4>The href Attribute</h4>
+          <ul>
+            <li>
+              HTML links are defined with the
+              <span class="span-1">&lt;a&gt;</span> tag. The link address is
+              specified in the href attribute:
+            </li>
+          </ul>
+          <div class="code-wrap code2">
+            <br />
+            <p>***Example Code***</p>
+            <br />
+            <p>&lt;img src = "img_shoe.jpg"&gt;</p>
+          </div>
+          <h4>The width and height Attributes</h4>
+          <ul>
+            <li>
+              Images in HTML have a set of size attributes, which specifies the
+              width and height of the image:
+            </li>
+          </ul>
+          <div class="code-wrap code2">
+            <br />
+            <p>***Example Code***</p>
+            <br />
+            <p>
+              &lt;img src = "img_shoe.jpg"
+              <br />
+              width = "500"
+              <br />
+              height = "600"&gt;
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   </body>
