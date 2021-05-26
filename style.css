@@ -93,8 +93,8 @@ nav ul {
   flex: 1 1 10rem;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  margin: 2.5rem;
+  justify-content: space-evenly;
+  margin: 5rem 2.5rem;
 }
 nav ul li {
   list-style: none;
@@ -235,15 +235,17 @@ nav h1 {
   }
   .main-header {
     transform: translateX(-100%);
-    transition: all 1s linear;
+    transition: all 0.6s linear;
   }
   .nav {
     transform: translateX(-100%);
-    transition: all 1s linear;
+    transition: all 0.7s linear;
   }
   .nav-link {
     transition: transform 0.5s ease-in;
+    text-decoration: underline;
   }
+
   #main-doc {
     margin: 1%;
   }
